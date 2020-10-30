@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML wireframe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="page.css">
+</head>
+
+<body>
+    <nav role="navigation">Nav</nav>
+    <main role="main">
+        <header>
+            <h1>New Film</h1>
+        </header>
+        <section>
+            <form id="Add Film">
+                <section class="add-film form">
+                    <label for="film-title">Flim title</label>
+                    <input type="text" name="Film-title" placeholder="Rocky" required>
+                </section>
+                <section class="add-film form">
+                    <label for="film-summary">Film Summary</label>
+                    <textarea name="film-summary" rows="15" required></textarea>
+                </section>
+                <section class="film-rating" class="form-section">
+                    <label for="film-rating">Rate your Film</label>
+                    <select size="1-5">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+
+                    </select>
+                </section>
+                <section class="form-section film-type-section">
+                    <h2>Select Film type</h2>
+
+                    <input type="radio" name="film-type" id="film-type-action" value="0" class="film-type-radio"
+                        checked>
+                    <label for="film-type-action">
+                        <span>Action</span>
+                        <p class="film-type-explanation">These are hard hitting films that get your adrenalene pumping.</p>
+                    </label>
+
+                    <input type="radio" name="film-type" name="film-type" id="film-type-drama" value="1"
+                        class="film-type-radio">
+                    <label for="film-type-drama">
+                        <span>Drama</span>
+                        <p class="film-type-explanation">These films are impactful, tug at your heart string and make you give thought.</p>
+                    </label>
+
+                    <input type="radio" name="film-type" id="film-type-horror" value="2" class="film-type-radio">
+                    <label for="film-type-horror">
+                        <span>horror</span>
+                        <p class="film-type-explanation">An unpleasant film that can cause a strong emotional response
+                            from the mind, typically fear but also despair, anxiety and great sadness.</p>
+                    </label>
+                </section>
+                <section class="button-section">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </section>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
